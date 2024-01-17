@@ -1,0 +1,54 @@
+<html>
+<head>
+    <style>
+        /* Grouped selectors for h1 and p elements */
+        h1, p {
+            text-align: center;
+            
+        }
+
+        h1 {
+            background-color: palevioletred;
+            color: white;
+        }
+
+        p {
+            background-color: aqua;
+            color: red;
+        }
+
+        /* Grouped selector for #ul and .center */
+        #ul, .center {
+            text-align: center;
+            color: brown;
+        }
+
+        /* Descendant selector - style list items inside the ul */
+        #ul li {
+            margin: 5px 0;
+            font-weight: bold;
+        }
+
+        /* Grouped selectors for h1 + h2.center and h2.center ~ p */
+        h1 + h2.center, h2.center ~ p {
+            font-size: 150%;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS SELECTORS</h1>
+    <p id="p">CSS selectors are used to "find" (or select) the HTML elements you want to style.</p>
+    <h2 class="center">We can divide CSS selectors into five categories:</h2>
+
+    <ul id="ul">
+        <li> Simple selectors (select elements based on name, id, class)</li>
+        <li>Combinator selectors (select elements based on a specific relationship between them)</li>
+        <li>Pseudo-class selectors (select elements based on a certain state)</li>
+        <li>Pseudo-elements selectors (select and style a part of an element)</li>
+        <li>Attribute selectors (select elements based on an attribute or attribute value)</li>
+    </ul>
+    
+
+    
+</body>
+</html>
