@@ -1,0 +1,80 @@
+<html>
+<head>
+    <style>
+        body {
+            background-color: darkgrey;
+            color: black;
+        }
+
+        h1 {
+            display: inline;
+        }
+
+        .menu-symbol {
+            height: 25px;
+            width: 25px;
+            margin-right: 10px;
+        }
+
+        .veg-symbol img,
+        .non-veg-symbol img {
+            height: 25px;
+            width: 25px;
+            margin-right: 10px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+            position: relative;
+        }
+
+        .container::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            border-left: 3px solid black; 
+            transform: translateX(-50%);
+        }
+
+        ul {
+            list-style-type: none;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1 style="font-size: xx-large; font-style: oblique;">Restaurant</h1>
+        <p style="font-style: italic; font-size: x-large;">A cozy restaurant serving delicious food</p>
+        <hr>
+        <h1 class="menu-symbol"><img src="./icons8-cutlery-48.png" alt="Menu symbol">Menu</h1>
+
+        <div class="container">
+            <div class="veg-symbol">
+                <h2><img src='./icons8-vegetarian-food-symbol-48.png' alt='Veg Symbol'> Veg</h2>
+                <ul>
+                    <li>Veg Biryani</li>
+                    <li>Paneer Biryani</li>
+                    <li>Mushroom Biryani</li>
+                    <li>Paneer Butter Masala</li>
+                </ul>
+            </div>
+
+            <div class="non-veg-symbol">
+                <h2><img src='./icons8-non-veg-48.png' alt='Veg Symbol'>Non-Veg</h2>
+                <ul>
+                    <li>Chicken Biryani</li>
+                    <li>Mutton Biryani</li>
+                    <li>Prawns Biryani</li>
+                    <li>Paneer Butter Masala</li>
+                </ul>
+            </div>
+        </div>
+    <p style="font-family: Arial, Helvetica, sans-serif; font-weight: bolder; font-size: xx-large;"><strong>Enjoy a 20% discount on orders above Rs.1000</strong></p>
+    </center>
+</body>
+</html>
+
+

@@ -1,0 +1,257 @@
+<html>
+<head>
+  <style>
+    @keyframes textAnimation {
+      0% {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .text-animaton {
+      margin: 100px;
+      display: inline-block;
+      font-size: 24px;
+      font-family: 'Arial', sans-serif;
+      white-space: nowrap;
+     
+    }
+
+    .text-animation span {
+      display: inline-block;
+      opacity: 0;
+      animation-name: textAnimation;
+      animation-duration:  0.5s;
+      animation-fill-mode:  forwards;
+
+    }
+
+    .text-animation{
+        animation-delay: 1s;
+       }
+       .child1{
+        animation-delay: 2s;
+       }
+       .child2{
+        animation-delay: 2.5s;
+       }
+       .child3{
+        animation-delay: 3.5s;
+       }
+       .child4{
+     animation-delay: 4s;
+       }
+       .child5{
+        animation-delay: 4.5s;
+       }
+       .child6{
+        animation-delay: 5s;
+       }
+       .child7{
+        animation-delay: 5.5s;
+       }
+       .child8{
+        animation-delay: 6s;
+       }
+       .child9{
+     animation-delay: 6.5s;
+       }
+       .child10{
+     animation-delay: 7.0s;
+       }
+       .child11{
+     animation-delay: 7.5s;
+       }
+       .child12{
+     animation-delay: 8.0s;
+       }
+       .child13{
+     animation-delay: 8.5s;
+       }
+       .child14{
+     animation-delay: 9.0s;
+       }
+       .child15{
+     animation-delay: 9.5s;
+       }
+       img {
+      width: 45px;
+      height: 45px;
+      margin-right: 50%;
+      margin-left: 40%;
+      margin-top: 5%;
+      }
+     img:hover {
+     width: 300px;
+     height: 300px;
+     transition: All 5s;
+     }
+     @keyframes songs {
+        0% { padding-top: 0px;}
+        25% { padding-top: 10px;}
+        50% { padding-top: 20px;}
+        75% { height: 30px;}
+        100% { padding-top: 50px;}
+     }
+     
+     .a {
+        color: black;
+        background-color: black;
+        animation-name: songs;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        line-height: 150px;
+     }
+     .b {
+        color: black;
+        background-color: black;
+        animation-name: songs;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-direction: reverse;
+     }
+     .c {
+        color: black;
+        background-color: black;
+        animation-name: songs;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse;
+     }
+     .d {
+        color: black;
+        background-color: black;
+        animation-name: songs;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-direction: normal;
+     }
+     .e {
+        color: black;
+        background-color: black;
+        animation-name: songs;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+     }
+     
+        .song1 {
+            color: white;
+            background-color:black;
+            width: 150px;
+            height: 50px;
+            margin-left: 25px;
+            opacity: 0;
+            transition: width 2s;
+        }
+        .song2 {
+            color: white;
+            background-color:black;
+            width: 300px;
+            height: 50px;
+            margin-left: 25px;
+            opacity: 0;
+            transition: width 2s;
+        }
+        .song3 {
+            color: white;
+            background-color: black;
+            width: 450px;
+            height: 50px;
+            margin-left: 25px;
+            opacity: 0;
+            transition: width 2s;
+        }
+        .song4 {
+            color: white;
+            background-color: black;
+            width: 600px;
+            height: 50px;
+            margin-left: 25px;
+            opacity: 0;
+            transition: width 2s;
+            text-align: center;
+        }
+        .one:hover ~ .song1 {
+            opacity: 1;
+        }
+        .two:hover ~ .song2 {
+            opacity: 1;
+        }
+        .three:hover ~ .song3 {
+            opacity: 1;
+        }
+        .four:hover ~ .song4 {
+            opacity: 1;
+        }
+        @keyframes transition {
+            0% { opacity: 0;}
+            25% { opacity: 0.25;}
+            50% { opacity: 0.5;}
+            75% { opacity: 0.75;}
+            100% { opacity: 1;}
+        }
+  </style>
+</head>
+<body>
+    <center>
+    <div class="text-animation" style="font-size: xx-large; font-style: oblique; color: brown; font-weight: bolder;">
+    <span class="child1">S</span>
+    <span class="child2">i</span>
+    <span class="child3">t</span>
+    <span class="child4">a</span>
+    <span class="child5">r</span>
+    <span class="child6">a</span>
+    <span class="child7">m</span>
+    <span class="child8">a</span>
+    <span class="child10">m</span>
+    <br>
+    <span class="child11">s</span>
+    <span class="child12">o</span>
+    <span class="child13">n</span>
+    <span class="child14">g</span>
+    <span class="child15">s</span>
+    <br>
+    <img src="./sitaramam.jpg" widht="350" height="350">
+    <audio controls>
+        <source src="./Oh Sita Hey Rama.mp3">
+    </audio>
+    <br>
+    <a class="a">.</a>
+    <a class="b">.</a>
+    <a class="c">.</a>
+    <a class="d">.</a>
+    <a class="e">.</a>
+    <a class="a">.</a>
+    <a class="b">.</a>
+    <a class="c">.</a>
+    <a class="d">.</a>
+    <a class="e">.</a>
+    <a class="a">.</a>
+    <a class="b">.</a>
+    <a class="c">.</a>
+    <a class="d">.</a>
+    <a class="e">.</a>
+    </center>
+    <div style="text-align: center;">
+        <h1>Background Color Transition</h1>
+        <br>
+        <button class="one">25%</button>
+        <button class="two">50%</button>
+        <button class="three">75%</button>
+        <button class="four">100%</button>
+        <h2 class="song1">Play</h2>
+        <h2 class="song2">play</h2>
+        <h2 class="song3"> play</h2>
+        <h2 class="song4">play</h2>
+    </div>
+
+   
+</div>
+</body>
+</html

@@ -1,0 +1,122 @@
+<html>
+<head>
+    <style>
+        body {
+            background-color: darkgrey;
+            color: black;
+        }
+
+        h1 {
+            display: inline;
+        }
+
+        .menu-symbol {
+            height: 25px;
+            width: 25px;
+            margin-right: 10px;
+        }
+
+        .veg-symbol img,
+        .non-veg-symbol img {
+            height: 25px;
+            width: 25px;
+            margin-right: 10px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+            position: relative;
+        }
+
+        .container::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            border-left: 3px solid black; 
+            transform: translateX(-50%);
+        }
+
+        ul {
+            list-style-type: none;
+        }
+        #chatbox {
+                position: sticky;
+                top: 50px;
+                float:inline-end;
+                background-color: lightgray;
+                padding: 20px;
+                padding-left: 20px;
+                padding-right: 20px;
+                margin: 20px;
+            }
+            .hide1, .hide2 {
+                text-align: center;
+                display: none;
+            }
+            .ask:hover, .experience:hover {
+                background-color: rgb(26, 0, 128);
+                
+            }
+            h3{
+                text-align: center;
+                width: 75px;
+                height: 75px;
+                background: red;
+                transition: width 2s; 
+                padding-top: 50;  
+            }
+            h3:hover {
+            width: 300px;
+            }
+    </style>
+</head>
+<body>
+    <center>
+        <h1 style="font-size: xx-large; font-style: oblique;">Restaurant</h1>
+        <p style="font-style: italic; font-size: x-large;">A cozy restaurant serving delicious food</p>
+        <hr>
+        <h1 class="menu-symbol"><img src="./icons8-cutlery-48.png" alt="Menu symbol">Menu</h1>
+
+        <div class="container">
+            <div class="veg-symbol">
+                <h2><img src='./icons8-vegetarian-food-symbol-48.png' alt='Veg Symbol'> Veg</h2>
+                <ul>
+                    <li>Veg Biryani</li>
+                    <li>Paneer Biryani</li>
+                    <li>Mushroom Biryani</li>
+                    <li>Paneer Butter Masala</li>
+                </ul>
+            </div>
+
+            <div class="non-veg-symbol">
+                <h2><img src='./icons8-non-veg-48.png' alt='Veg Symbol'>Non-Veg</h2>
+                <ul>
+                    <li>Chicken Biryani</li>
+                    <li>Mutton Biryani</li>
+                    <li>Prawns Biryani</li>
+                    <li>Paneer Butter Masala</li>
+                </ul>
+            </div>
+        </div>
+    <p style="font-family: Arial, Helvetica, sans-serif; font-weight: bolder; font-size: xx-large;"><strong>Enjoy a 20% discount on orders above Rs.1000</strong></p>
+    </center>
+    <div id="chatbox">
+        <h5>Enter your questions.</h5>
+        <form>
+            <input type="text" placeholder="Ask your questions?">
+            <input class="ask" type="button" value="Ask"><br><span class="hide1">Submitting....</span><br><br>
+            <textarea rows="10" cols="35" placeholder="Share your experience with us"></textarea><br>
+            <input class="experience" type="button" value="Submit">
+        
+        </form>
+    </div>
+    <h3>Visit us Again</h3>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60561.23626535418!2d79.09194834459095!3d18.43480060617348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bccd910bcf48931%3A0x4889b0398ed69f07!2sKarimnagar%2C%20Telangana!5e0!3m2!1sen!2sin!4v1706375007997!5m2!1sen!2sin" width="950" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+</body>
+</html>
+
+
